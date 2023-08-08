@@ -41,7 +41,7 @@ To get started with this playbook, follow these steps:
 
 The playbook is structured into different modules and examples, each covering a particular topic or use case. Here's an overview of the playbook's structure:
 
-- **Module 1: Getting Started with OCI and Terraform**
+- **[Module 1: Getting Started with OCI and Terraform](https://github.com/saurabhterna/terraform-oci/tree/main/Module-1)**
   - Introduction to OCI and Terraform
   - Setting up your environment
 
