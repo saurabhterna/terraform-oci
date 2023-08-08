@@ -1,7 +1,5 @@
 # OCI Terraform Playbook
 
-![OCI Terraform Playbook](images/oci-terraform-playbook.png)
-
 Welcome to the OCI Terraform Playbook repository! This playbook is designed to provide you with a straightforward and practical introduction to using Terraform for Oracle Cloud Infrastructure (OCI). Whether you're new to Terraform or just getting started with OCI, this repository will guide you through the process of creating and managing OCI resources using infrastructure as code (IaC) principles.
 
 ## Table of Contents
