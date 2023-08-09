@@ -1,3 +1,4 @@
+
 ## `network.tf` Configuration Summary
 
 In this Terraform configuration file, we define the infrastructure components required to create a Virtual Cloud Network (VCN) and a Public Subnet within Oracle Cloud Infrastructure (OCI).
