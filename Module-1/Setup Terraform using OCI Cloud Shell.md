@@ -24,12 +24,18 @@ Retrieve the User OCID from the Oracle Cloud Infrastructure (OCI) Console using 
 
 ## Step 3: Generate API Key Pair
 
-### Using OCI Cloud Console:
+### Generate API Key Pair Using OCI Cloud Console
 
-1. In the OCI Cloud Console, go to "Identity" > "Users."
-2. Select the user for whom you want to generate an API key pair.
-3. Under the "API Keys" tab, click "Add API Key."
-4. Download the generated API private key and keep it secure.
+To generate an API key pair for Oracle Cloud Infrastructure (OCI) using the OCI Cloud Console, follow these steps:
+
+1. Log in to your OCI Cloud Console.
+2. In the upper right corner of the console, click on your profile picture or initials to open the Profile menu.
+3. From the Profile menu, select "My Profile".
+4. In the Resources section at the bottom left, click "API Keys."
+5. Click "Add API Key" at the top left of the API Keys list. The "Add API Key" dialog displays.
+6. Click "Download Private Key" and upload the key to your `.oci` directory on cloud shell terminal. In most cases, you do not need to download the public key.
+Note: If your browser downloads the private key to a different directory, be sure to upload it to your `.oci` directory on cloud shell. [How to upload file to Cloud shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/devcloudshellgettingstarted.htm)
+5. Click "Add."
 
 ### Using OCI Cloud Shell (Optional):
 
