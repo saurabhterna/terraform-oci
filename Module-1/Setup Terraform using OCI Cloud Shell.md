@@ -1,4 +1,4 @@
-# Provider Configuration Guide for Oracle Cloud Infrastructure (OCI)
+# provider.tf Configuration File Guide
 
 This guide will walk you through the process of identifying all the required parameters for the `provider.tf` file when using the Oracle Cloud Infrastructure (OCI) provider in your Terraform configuration.
 
@@ -106,7 +106,7 @@ provider "oci" {
   tenancy_ocid     = "YOUR_TENANCY_OCID"
   user_ocid        = "YOUR_USER_OCID"
   fingerprint      = "YOUR_API_KEY_FINGERPRINT"
-  private_key_path = "/home/sample/.oci/id_user.pem"
+  private_key_path = "~/.oci/private_file_name.pem"
   region           = "YOUR_DESIRED_REGION"
 }
 ```
