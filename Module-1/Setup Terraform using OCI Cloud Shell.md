@@ -1,4 +1,3 @@
-
 # Provider Configuration Guide for Oracle Cloud Infrastructure (OCI)
 
 This guide will walk you through the process of identifying all the required parameters for the `provider.tf` file when using the Oracle Cloud Infrastructure (OCI) provider in your Terraform configuration.
@@ -13,7 +12,6 @@ Follow these steps to obtain your Tenancy OCID from the Oracle Cloud Infrastruct
 4. Under "Tenancy Information", you will find the Tenancy OCID. Click the "Copy" button next to the OCID to copy it to your clipboard.
 5. Replace `"ocid1.tenancy.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx2hna"` in the provider configuration with the copied Tenancy OCID.
 
-
 ## Step 2: User OCID
 
 Retrieve the User OCID from the Oracle Cloud Infrastructure (OCI) Console using the following steps:
@@ -23,7 +21,6 @@ Retrieve the User OCID from the Oracle Cloud Infrastructure (OCI) Console using 
 3. From the Profile menu, select "My Profile".
 4. Under "User Information", you will find the User OCID. Click the "Copy" button next to the OCID to copy it to your clipboard.
 5. Replace `"ocid1.user.oc1..aaaaaaaavxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxca"` in the provider configuration with the copied User OCID.
-
 
 ## Step 3: Generate API Key Pair
 
@@ -35,8 +32,6 @@ Retrieve the User OCID from the Oracle Cloud Infrastructure (OCI) Console using 
 4. Download the generated API private key and keep it secure.
 
 ### Using OCI Cloud Shell (Optional):
-
-## Generating an API Signing Key (OCI Cloud Shell)
 
 To generate the required API key pair for Oracle Cloud Infrastructure (OCI) using OCI Cloud Shell, follow these OpenSSL commands in the required PEM format:
 
@@ -68,10 +63,11 @@ To generate the required API key pair for Oracle Cloud Infrastructure (OCI) usin
    cat ~/.oci/oci_api_key_public.pem | xclip
    ```
    Keep the public key value for the next steps.
-   ```
-   ## Upload the Public Key
 
-Once you have generated the public key, follow these steps to upload it to Oracle Cloud Infrastructure (OCI) Console:
+## Upload the Public Key
+
+Once you have generated the public key, follow these steps to upload it to the Oracle Cloud Infrastructure (OCI) Console:
+
 1. Sign in to your OCI account.
 2. View the details for the user who will be using the API key pair:
    - If you're signed in as the user:
@@ -83,7 +79,7 @@ Once you have generated the public key, follow these steps to upload it to Oracl
 6. Paste the contents of the PEM public key you generated earlier into the dialog box.
 7. Click the "Add" button.
 
-By following these steps, you will successfully created and uploaded the public key to to your profile, allowing your API requests to be securely signed and verified by OCI using the associated private key.
+By following these steps, you will successfully create and upload the public key to your profile, allowing your API requests to be securely signed and verified by OCI using the associated private key.
 
 ## Step 4: Fingerprint
 
