@@ -1,4 +1,4 @@
-# provider.tf Configuration File Guide
+# Instructions for getting required provider.tf file parameters
 
 This guide will walk you through the process of identifying all the required parameters for the `provider.tf` file when using the Oracle Cloud Infrastructure (OCI) provider in your Terraform configuration.
 
