@@ -1,1 +1,57 @@
+## Prepare for VCN Creation
 
+Follow these steps to create a Virtual Cloud Network (VCN) using Terraform in the Oracle Cloud Infrastructure (OCI):
+
+### 1. Login into OCI Cloud Shell
+
+Login to your Oracle Cloud account and access the OCI Cloud Shell environment.
+
+### 2. Create a Directory
+
+In the Cloud Shell terminal, create a directory named `createvcn` using the following command:
+```shell
+mkdir ~/createvcn
+```
+### 3. Create Configuration Files
+Create two files `provider.tf` and `network.tf` to define your Terraform configuration. You can either use your local machine's text editor or the OCI Cloud Editor to create these files.
+
+#### `provider.tf`
+
+#### `network.tf`
+
+
+### 4. Upload Files
+
+Upload the `provider.tf` and `network.tf` files that you've created to the `createvcn` directory in your Cloud Shell environment.
+
+### 5. Run Terraform Commands
+
+Navigate to the `createvcn` directory:
+
+```shell
+cd ~/createvcn
+```
+
+Initialize Terraform:
+
+```shell
+terraform init
+```
+
+Review the planned changes:
+
+```shell
+terraform plan
+```
+
+If the plan looks correct, apply the changes:
+
+```shell
+terraform apply
+```
+
+Terraform will prompt you to confirm the changes. Type "yes" and press Enter.
+
+---
+
+Always exercise caution while applying changes, especially in production environments.
