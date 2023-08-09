@@ -1,0 +1,48 @@
+## `network.tf` Configuration Summary
+
+In this Terraform configuration file, we define the infrastructure components required to create a Virtual Cloud Network (VCN) and a Public Subnet within Oracle Cloud Infrastructure (OCI).
+
+1. **Compartment Data Source:**
+
+    - A data source is defined to fetch information about the current compartment, identified by its OCID.
+
+2. **Availability Domain Data Source:**
+
+    - A data source is defined to fetch details about the availability domain, using the fetched compartment OCID.
+
+3. **Virtual Network Resource (`oci_core_virtual_network`):**
+
+    - A VCN resource is created with a specified CIDR block and display name.
+    - The compartment OCID is used to associate the VCN with the correct compartment.
+
+4. **Internet Gateway Resource (`oci_core_internet_gateway`):**
+
+    - An Internet Gateway resource is created to provide connectivity between the VCN and the internet.
+    - The VCN OCID and compartment OCID are used for proper association.
+
+5. **Public Subnet Resource (`oci_core_subnet`):**
+
+    - A public subnet resource is defined within the VCN.
+    - The CIDR block, display name, availability domain, and DNS label are set.
+    - The VCN and compartment OCIDs are used for association.
+
+6. **Route Table Resource (`oci_core_route_table`):**
+
+    - A route table resource is created to define route rules for traffic within the subnet.
+    - A route rule is added that directs traffic to the Internet Gateway for internet access.
+    - The compartment OCID and VCN OCID are used for association.
+
+7. **Subnet Route Table Association (`oci_core_subnet_route_table_association`):**
+
+    - An association between the public subnet and the previously created route table is established.
+    - This ensures that instances in the subnet use the defined route rules.
+
+8. **Security List Resource (`oci_core_security_list`):**
+
+    - A security list resource is defined to control inbound and outbound traffic for the subnet.
+    - Ingress rules are set to allow traffic on ports 80 and 443 from any source.
+    - Egress rules are set to allow all outbound traffic.
+
+---
+
+This `network.tf` file sets up the necessary networking components to create a public subnet with internet access in your Oracle Cloud Infrastructure environment.
