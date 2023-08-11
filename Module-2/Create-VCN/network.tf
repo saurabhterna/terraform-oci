@@ -31,17 +31,6 @@ resource "oci_core_route_table" "public_rt" {
   }
 }
 
-resource "oci_core_subnet" "public_subnet" {
-  cidr_block     = "10.0.1.0/24"
-  display_name  = "PHX-VCN-01-PublicSubnet-01"
-  vcn_id        = oci_core_virtual_network.phx_vcn01.id
-  compartment_id = var.compartment_id
-  availability_domain = data.oci_identity_availability_domain.ad.name
-  dns_label = "public-subnet"
-
-  route_table_id = oci_core_route_table.public_rt.id
-}
-
 
 resource "oci_core_security_list" "public_sl" {
   compartment_id = var.compartment_id
@@ -74,3 +63,17 @@ resource "oci_core_security_list" "public_sl" {
     stateless = false
   }
 }
+
+
+resource "oci_core_subnet" "public_subnet" {
+  cidr_block     = "10.0.1.0/24"
+  display_name  = "PHX-VCN-01-PublicSubnet-01"
+  vcn_id        = oci_core_virtual_network.phx_vcn01.id
+  compartment_id = var.compartment_id
+  availability_domain = data.oci_identity_availability_domain.ad.name
+  dns_label = "public-subnet"
+
+  route_table_id = oci_core_route_table.public_rt.id
+  security_list_ids = [oci_core_security_list.public_sl.id]
+}
+
