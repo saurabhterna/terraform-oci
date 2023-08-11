@@ -64,7 +64,3 @@ This guide will walk you through the process of creating two Apache web servers 
 Congratulations! You've successfully created two Apache web servers in Oracle Cloud Infrastructure using Terraform. This guide provided step-by-step instructions, from setting up your environment and deploying the servers to testing them and cleaning up afterward. Happy web serving!
 
 **Note:** This guide offers a basic setup for educational purposes. In a production environment, additional configurations such as security groups and load balancers would be necessary for high availability and security.
-
----
-
-Please replace `<repository-url>` with the actual URL of your GitHub repository. This revised `.md` file provides a clear and concise guide for users to follow while creating Apache web servers in Oracle Cloud Infrastructure using Terraform.
