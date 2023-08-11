@@ -1,5 +1,5 @@
 variable "compartment_id" {
-  default = "ocid1.compartment.oc1..aaaaaaaaw7xc5ro2sfivso2bmp6wy5nt56wt6eek7of6nuc3xo77zsbtmlea"
+  default = "ocid1.compartment.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   description = "The OCID of the compartment where resources will be created."
 }
 
