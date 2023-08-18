@@ -49,7 +49,7 @@ This guide will walk you through the process of creating Load Balancer and two A
      Confirm by typing `yes` when prompted.
 
 4. **Verification and Testing:**
-   - Once Terraform completes, it will display the public IP addresses of the created web servers.
+   - Once Terraform completes, it will display the public IP addresses of the created web servers and Load Balancer Public IP address.
    - Open a web browser and navigate to the public IP addresses of Load Balancer to Observe that the traffic is being evenly distributed among the web server instances.
 
 5. **Destroy Resources:**
