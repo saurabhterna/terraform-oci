@@ -30,6 +30,9 @@ This guide will walk you through the process of creating Load Balancer and two A
      ```
      Replace `<repository-url>` with the actual URL of the GitHub repository.
 
+     Replace the values with your actual OCI credentials and configuration in provider.tf and variable.tf.
+
+
 2. **Initialize Terraform:**
    - Run the following commands:
      ```shell
