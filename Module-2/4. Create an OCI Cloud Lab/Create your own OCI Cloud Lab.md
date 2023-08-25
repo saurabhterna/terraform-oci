@@ -1,14 +1,14 @@
 # Create Your Own OCI Cloud Lab using Terraform
 
-Welcome to the **Create Your Own OCI Cloud Lab using Terraform** repository! This repository provides a set of Terraform scripts that empower you to establish a personalized Oracle Cloud Infrastructure (OCI) lab environment effortlessly. With these scripts, you can create essential IAM resources, manage quotas and policies, and curate a secure and controlled learning space for OCI services.
+Welcome to the **Build Your Own OCI Cloud Lab with Terraform repository!** This place has some handy Terraform scripts that help you set up your very own Oracle Cloud Infrastructure (OCI) lab.  With these scripts, you can create essential IAM resources, manage quotas and policies, and provide secure way to play around and learn about OCI services.
 
 ## Introduction
 
-In the ever-evolving landscape of cloud computing, hands-on experience is invaluable. Whether you're a trainer, educator, or a learner eager to explore OCI, this repository offers a practical solution. It enables trainers to generate isolated lab environments for their students, granting them the opportunity to practice OCI services within a restricted context. This repository isn't just about setting up cloud resources – it's about creating a space where knowledge transforms into tangible skills.
+In the ever-evolving landscape of cloud computing, hands-on experience is invaluable. Whether you're a trainer, educator, or a learner eager to explore OCI, this repository offers a practical solution. It enables trainers to generate isolated lab environments for their students, granting them the opportunity to practice OCI services within a restricted context. 
 
 ## Use Case
 
-Imagine you're an OCI trainer with access to the OCI Console. You want to provide your learners with a controlled environment where they can experiment and learn without the risk of unintended changes. By utilizing the scripts in this repository, you can effortlessly create a dedicated compartment, generate user credentials, establish user groups, map users to those groups, enforce quotas, and set up essential policies. Learners can then access this secure environment to gain hands-on experience with OCI services.
+Imagine you're an OCI trainer with access to the OCI Console. You want to provide your learners with a restricted environment where they can experiment and learn. By utilizing the scripts in this repository, you can effortlessly create a dedicated compartment, generate user credentials, establish user groups, map users to those groups, enforce quotas, and set up essential policies. Learners can then access this secure environment to gain hands-on experience with OCI services.
 
 ## Scripts
 
@@ -29,7 +29,7 @@ To begin using these scripts and create your OCI Cloud Lab:
    ```sh
    git clone https://github.com/saurabhterna/oci-cloud-lab.git
 
-2. Modify the `variables.tf` file to set your desired variable values.
+2. Modify the `provider.tf` and `variables.tf` file to set your desired variable values.
 
 3. Initialize Terraform:
 
