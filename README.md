@@ -49,6 +49,7 @@ The playbook is structured into different modules and examples, each covering a 
   - [Creating a Virtual Cloud Network (VCN) using Terraform](https://github.com/saurabhterna/terraform-oci/tree/main/Module-2/1.%20Create-VCN)
   - [Creating Two Web Servers in OCI using Terraform](https://github.com/saurabhterna/terraform-oci/tree/main/Module-2/2.%20Create-Compute)
   - [Deploying a Highly Available Website](https://github.com/saurabhterna/terraform-oci/tree/main/Module-2/3.%20High%20Availability%20Website)
+  - [Create an OCI Cloud Lab](https://github.com/saurabhterna/terraform-oci/tree/main/Module-2/4.%20Create%20an%20OCI%20Cloud%20Lab)
 
 
 Each module contains practical examples, explanations, and step-by-step instructions to help you learn and implement Terraform with OCI effectively.
