@@ -1,10 +1,10 @@
 variable "compartment_id" {
-  default = "ocid1.tenancy.oc1..aaaaaaaaxy6bh46cdnlfpaibasc6dotowv32hc2sbj4ph3ocxtfxhhva2hna"
+  default = "ocid1.tenancy.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxa"
   description = "The OCID of the rootcompartment where resources will be created."
 }
 
 variable "tenancy_ocid" {
-  default = "ocid1.tenancy.oc1..aaaaaaaaxy6bh46cdnlfpaibasc6dotowv32hc2sbj4ph3ocxtfxhhva2hna"
+  default = "ocid1.tenancy.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxa"
   description = "The OCID of the OCI Lab Tenancy."
 }
 
